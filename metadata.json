@@ -1,5 +1,5 @@
 {
-  "name": "Origami Simulator",
-  "description": "A physics-based rigid folding simulator for origami crease patterns.",
+  "name": "Optigami",
+  "description": "Optigami",
   "requestFramePermissions": []
 }

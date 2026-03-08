@@ -9,7 +9,7 @@ import { Github, RefreshCw, Upload } from 'lucide-react';
 import { parseFoldFile } from '@/lib/foldParser';
 import { LLMPrompt } from '@/components/LLMPrompt';
 
-export default function OrigamiSimulator() {
+export default function Optigami() {
   const [customPatterns, setCustomPatterns] = useState<Pattern[]>([]);
   const [selectedPatternId, setSelectedPatternId] = useState(patterns[0].id);
   const [foldPercent, setFoldPercent] = useState(0);
@@ -60,9 +60,9 @@ export default function OrigamiSimulator() {
       {/* Left Sidebar */}
       <div className="w-80 flex-shrink-0 border-r border-zinc-800 bg-zinc-900 flex flex-col">
         <div className="p-6 border-b border-zinc-800">
-          <h1 className="text-xl font-semibold tracking-tight mb-2">Origami Simulator</h1>
+          <h1 className="text-xl font-semibold tracking-tight mb-2">Optigami</h1>
           <p className="text-sm text-zinc-400">
-            A physics-based rigid folding simulator. Select a pattern and drag the slider to fold.
+            Optigami
           </p>
         </div>
 
@@ -211,18 +211,6 @@ export default function OrigamiSimulator() {
             position={[0, 0, -0.01]} 
           />
         </Canvas>
-        
-        <div className="absolute top-6 right-6 flex gap-4">
-          <a 
-            href="https://github.com/amandaghassaei/OrigamiSimulator" 
-            target="_blank" 
-            rel="noreferrer"
-            className="text-zinc-500 hover:text-zinc-300 transition-colors flex items-center gap-2 text-sm bg-zinc-900/80 px-4 py-2 rounded-full border border-zinc-800 backdrop-blur-sm"
-          >
-            <Github size={16} />
-            Original Inspiration
-          </a>
-        </div>
       </div>
     </div>
   );
